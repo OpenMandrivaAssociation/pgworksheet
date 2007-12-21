@@ -13,6 +13,7 @@ Source3: pgworksheet-48.png
 License: GPL
 Group: Databases
 Url: http://pgworksheet.projects.postgresql.org/index.html
+BuildRoot: %{_tmppath}/%{name}-buildroot
 Requires: pyPgSQL
 Requires: pygtk2.0
 BuildRequires: python-devel

@@ -35,22 +35,11 @@ python setup.py install --root %buildroot
 %find_lang %name
 
 mkdir -p %buildroot{%_liconsdir,%_iconsdir,%_miconsdir}
-mkdir -p %buildroot%_menudir
 
 install -m 644 %SOURCE1 %buildroot%_miconsdir/%name.png
 install -m 644 %SOURCE2 %buildroot%_iconsdir/%name.png
 install -m 644 %SOURCE3 %buildroot%_liconsdir/%name.png
 
-cat > %buildroot%_menudir/%name <<EOF
-?package(%name):\
-    needs="X11"\
-    section="Applications/Databases"\
-    title="PGworksheet"\
-    longtitle="GUI frontend to PostgreSQL"\
-    command="%{_bindir}/%{name}"\
-    icon="%{name}.png"\
-    xdg="true"
-EOF
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -73,5 +62,4 @@ rm -rf $RPM_BUILD_ROOT
 %_liconsdir/%name.png
 %_iconsdir/%name.png
 %_miconsdir/%name.png
-%_menudir/%name
 

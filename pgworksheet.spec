@@ -1,6 +1,6 @@
 %define name pgworksheet
-%define version 1.8.1
-%define release %mkrel 2
+%define version 1.9
+%define release %mkrel 1
 
 Summary: A simple GUI frontend to PostgreSQL
 Name: %{name}

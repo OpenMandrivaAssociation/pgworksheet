@@ -1,6 +1,6 @@
 %define name pgworksheet
 %define version 1.9
-%define release %mkrel 2
+%define release %mkrel 3
 
 Summary: A simple GUI frontend to PostgreSQL
 Name: %{name}
@@ -55,9 +55,9 @@ rm -rf $RPM_BUILD_ROOT
 %endif
 
 %files -f %name.lang
-%defattr(-,root,root)
+%defattr(644,root,root,755)
 %doc AUTHORS README
-%_bindir/%name
+%attr(755,root,root) %_bindir/%name
 %_prefix/lib/python*/site-packages/*
 %dir %_datadir/pixmaps/pgworksheet
 %_datadir/pixmaps/pgworksheet.png

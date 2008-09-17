@@ -10,7 +10,7 @@ Source0: %{name}-%{version}.tar.bz2
 Source1: pgworksheet-16.png
 Source2: pgworksheet-32.png
 Source3: pgworksheet-48.png
-License: GPL
+License: GPLv2+
 Group: Databases
 Url: http://pgworksheet.projects.postgresql.org/index.html
 BuildRoot: %{_tmppath}/%{name}-buildroot

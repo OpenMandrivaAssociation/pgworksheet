@@ -3,7 +3,7 @@
 Summary: A simple GUI frontend to PostgreSQL
 Name:    pgworksheet
 Version: 1.9
-Release: 7
+Release: 8
 Source0: %{name}-%{version}.tar.bz2
 Source1: pgworksheet-16.png
 Source2: pgworksheet-32.png

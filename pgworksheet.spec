@@ -10,7 +10,7 @@ Source2: pgworksheet-32.png
 Source3: pgworksheet-48.png
 License: GPLv2+
 Group: Databases
-Url: http://pgworksheet.projects.postgresql.org/index.html
+Url: https://pgworksheet.projects.postgresql.org/index.html
 Requires: pyPgSQL
 Requires: pygtk2.0
 BuildRequires: python-devel
